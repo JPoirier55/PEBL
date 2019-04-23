@@ -1,0 +1,36 @@
+
+# 2019-04-23 12:18:29.576124
++q
+
+# 2019-04-23 12:18:31.270305
++\q
+
+# 2019-04-23 12:18:58.166675
++client.connect
+
+# 2019-04-23 12:19:09.829820
++client.read_coils
+
+# 2019-04-23 12:19:23.958474
++client.read_coils 0 1
+
+# 2019-04-23 12:19:30.453267
++client.read_coils(0,1)
+
+# 2019-04-23 12:19:46.797550
++client.read_coils(0x01,1)
+
+# 2019-04-23 12:20:20.260547
++client.read_coils add
+
+# 2019-04-23 12:20:28.428314
++client.read_coils address 0 count 1
+
+# 2019-04-23 12:20:43.483891
++client.read_coils address 0 count 5
+
+# 2019-04-23 13:29:49.993482
++client.read_device_information
+
+# 2019-04-23 13:30:40.406920
++client.baudrate

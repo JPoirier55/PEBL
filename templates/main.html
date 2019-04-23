@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<button onclick="start_polling()">Connect</button>
+<button onclick="stop_polling()">Disconnect</button>
+<div id="div1"></div>
+<div id="div2"></div>
+<script>
+
+    setInterval(function(){
+        $.ajax({
+            url: 'api/data',
+            success: function(data) {
+                $('#div1').html(data);
+            }
+        });
+    }, 3000);
+
+</script>
+<script>
+    function start_polling(){
+        $.ajax({
+            url: 'api/start?start=true',
+            success: function(data) {
+                $('#div2').html(data);
+            }
+        });
+    }
+    function stop_polling(){
+        $.ajax({
+            url: 'api/start?start=false',
+            success: function(data) {
+                $('#div2').html(data);
+            }
+        });
+    }
+</script>
+</body>
+</html>
