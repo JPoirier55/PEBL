@@ -3,41 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-<button onclick="start_polling()">Connect</button>
-<button onclick="stop_polling()">Disconnect</button>
-<div id="div1"></div>
-<div id="div2"></div>
-<script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="form-inline">
+            <button class="btn btn-success" style="margin-left: 20px;" onclick="start_polling()">Connect</button>
+            <button class="btn btn-danger" style="margin-left: 20px;" onclick="stop_polling()">Disconnect</button>
+        </form>
+        <span style="font-size: larger; margin-left: 20px; color: red;" class="navbar-text" id="connected">
+            Disconnected
+        </span>
+    </div>
+</nav>
+<div id="div1" class="table-responsive">
+    <table class="table table-striped table-dark" style="width: 50%; margin-left: 20px; margin-top: 20px;">
+        <thead>
+        <tr>
+            <th scope="col">Alarm</th>
+            <th scope="col">Value</th>
+        </tr>
+        </thead>
+        <tbody id="alarm_table">
+        </tbody>
+    </table>
+</div>
 
-    setInterval(function(){
+<script>
+    var interval;
+
+    $(document).ready(
         $.ajax({
-            url: 'api/data',
-            success: function(data) {
-                $('#div1').html(data);
+                url: '/api/data',
+                success: function(data) {
+                    console.log(data);
+                    var jsonObj = JSON.parse(data);
+                    console.log(jsonObj);
+                    jQuery.each(jsonObj, function(i, val){
+                        console.log(i , val);
+                        $("#alarm_table").append("<tr>" +
+                            "<td id='alarm_" + i + "name'>" + val['name'] + "</td>" +
+                            "<td id='alarm_" + i + "value'>" + val['value'] + "</td>" +
+                            "</tr>");
+                    })
+                }
             }
-        });
-    }, 3000);
+        )
+    );
+    function startInterval() {
+        interval = setInterval(function () {
+            $.ajax({
+                url: 'api/data',
+                success: function (data) {
+                    var jsonObj = JSON.parse(data);
+                    jQuery.each(jsonObj, function (i, val) {
+                        if (val['value'][0]) {
+                            $("#alarm_" + i + "value").css('background-color', 'green').html(val['value'][0].toString());
+                        } else {
+                            $("#alarm_" + i + "value").css('background-color', 'red').html(val['value'][0].toString());
+                        }
+                    })
+                }
+            });
+        }, 3000);
+    }
+    function stopInterval(){
+        clearInterval(interval);
+    }
 
-</script>
-<script>
     function start_polling(){
         $.ajax({
             url: 'api/start?start=true',
             success: function(data) {
-                $('#div2').html(data);
+                if(data == 'Connected'){
+                    $('#connected').css('color', "green").html(data);
+                }else{
+                    $('#connected').css('color', "red").html(data);
+                }
+
             }
         });
+        startInterval();
     }
     function stop_polling(){
         $.ajax({
             url: 'api/start?start=false',
             success: function(data) {
-                $('#div2').html(data);
+                if(data == 'Disconnected'){
+                    $('#connected').css('color', "red").html(data);
+                }else{
+                    $('#connected').css('color', "green").html(data);
+                }
             }
         });
+        stopInterval();
     }
 </script>
 </body>

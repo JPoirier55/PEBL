@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ setInterval(function(){
+        $.ajax({
+            url: 'api/data',
+            success: function(data) {
+                var mainDiv = $('#div1');
+                var jsonObj = JSON.parse(data);
+
+            }
+        });
+    }, 3000);
+</body>
+</html>
