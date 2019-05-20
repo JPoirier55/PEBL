@@ -2,64 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3412ee95-4942-44b6-ae4d-fdb08987fe98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Address List.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Address List.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alarm_List_7040.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Alarm_List_7040.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/Analysis-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/COLLECT-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/EXE-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/PKG-00.pkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/PKG-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/PYZ-00.pyz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/PYZ-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/app.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/app.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/base_library.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/warn-app.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/xref-app.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/Include/pyconfig.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/VCRUNTIME140.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_asyncio.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_bz2.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_contextvars.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_ctypes.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_decimal.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_hashlib.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_lzma.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_multiprocessing.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_overlapped.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_queue.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_socket.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_ssl.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/_win32sysloader.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/app.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/app.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/base_library.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/lib2to3/Grammar.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/lib2to3/Grammar3.7.0.final.0.pickle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/lib2to3/PatternGrammar.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/lib2to3/PatternGrammar3.7.0.final.0.pickle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/lib2to3/tests/data/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/libcrypto-1_1.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/libssl-1_1.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/markupsafe/_speedups.cp37-win32.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/mfc140u.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/pyexpat.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/python37.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/pythoncom37.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/pywintypes37.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/select.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/templates/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/unicodedata.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/win32api.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/win32com/shell/shell.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/win32trace.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/win32ui.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/win32wnet.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebl_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/pebl_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,14 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pebl_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            <state relative-caret-position="204">
+              <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -208,6 +160,7 @@
         <option value="$PROJECT_DIR$/Alarm_List_7040.csv" />
         <option value="$PROJECT_DIR$/pebl_main.py" />
         <option value="$PROJECT_DIR$/Address List.csv" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -366,15 +319,15 @@
       <workItem from="1558096557307" duration="4009000" />
       <workItem from="1558355365913" duration="592000" />
       <workItem from="1558356004287" duration="809000" />
-      <workItem from="1558356831388" duration="12523000" />
+      <workItem from="1558356831388" duration="12861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44277000" />
+    <option name="totallyTimeSpent" value="44615000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14925373" />
@@ -552,11 +505,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pebl_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="204">
+          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
         </state>
       </provider>
     </entry>
