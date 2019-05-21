@@ -1,8 +1,0 @@
-IP,SYSTEM,ALARMS,VALUE
-192.168.0.59,7040
-,,External Shutdown,[True]
-,,E-Stop Pressed,[True]
-,,Vacuum Alarm,[False]
-,,Pressure Alarm,[False]
-,,No Flow,[True]
-,,Leak,[True]

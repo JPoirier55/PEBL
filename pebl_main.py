@@ -113,18 +113,9 @@ def clean_outputs(outputs):
                 worksheet.write_row('A' + str(index), (str(alarm['name']), str(alarm['value'])), green_cell)
             index += 1
     workbook.close()
-    # f = open('Report.csv', 'w')
-    # csv_writer = csv.writer(f, delimiter=',')
-    # csv_writer.writerow(('IP', 'SYSTEM', 'ALARMS', 'VALUE'))
-    # for dict_obj in outputs:
-    #     csv_writer.writerow((dict_obj['ip'], dict_obj['system']))
-    #     for alarm in dict_obj['alarms']:
-    #         print(alarm)
-    #         csv_writer.writerow(('', '', alarm['name'], alarm['value']))
+
 
 if __name__ == '__main__':
-    # clean_outputs('sdf')
-
     run_manual()
 
 
